@@ -1,0 +1,629 @@
+{
+  "personal": {
+    "name": "Lutfi Nailufar Nurdin",
+    "shortName": "Lutfi Nurdin",
+    "title": "Senior Principal Solutions Architect & Lead Software Engineer",
+    "subTitle": "Enterprise Systems | ISO 8583 Financial Switching | Telecom & Cloud Infrastructure",
+    "experienceYears": "25+",
+    "email": "lutfinn@gmail.com",
+    "phone": "+62 821-2375-5074",
+    "phoneClean": "6282123755074",
+    "location": "Depok / Jakarta, Indonesia",
+    "address": "Villa Cinere Hijau 2 B4/6, Kec. Limo, Kel. Meruyung, Depok - 16515",
+    "website": "https://farinside.com",
+    "avatar": "/profile.png",
+    "bio": "Senior Principal Solutions Architect with over 25 years of engineering excellence building national-scale telecommunication backbones, mission-critical enterprise systems, ISO 8583 financial transaction switching, and real-time cybersecurity telemetry. Proven track record leading core development across Telkom Group, state-owned enterprises, and fintech ecosystems."
+  },
+  "metrics": [
+    {
+      "label": "Years Experience",
+      "value": "25+",
+      "desc": "Continuous software engineering leadership since 1999"
+    },
+    {
+      "label": "Enterprise Projects",
+      "value": "50+",
+      "desc": "Mission-critical systems delivered for Telkom Group & BUMN"
+    },
+    {
+      "label": "Switching Availability",
+      "value": "99.99%",
+      "desc": "Telkomsel ISO 8583 recharge gateway running since 2003"
+    },
+    {
+      "label": "Telemetry & Events",
+      "value": "Millions/Day",
+      "desc": "Real-time threat map & data center metrics processed"
+    }
+  ],
+  "summary": "A distinguished software engineer and solutions architect with over a quarter-century of frontline engineering leadership. Specializes in designing, developing, and deploying mission-critical enterprise platforms, distributed financial switches, high-volume telecom gateways, and IoT infrastructure.\n\nInstrumental in building Indonesia's foundational digital platforms—from early Telkom web portals and Public Key Infrastructure (PKI) in the early 2000s, to Telkomsel's ISO 8583 recharge switching gateway operating continuously since 2003, and Telkom Group's modern enterprise platforms including Telkom eRUPS (Shareholders General Meeting built on Odoo ERP), Telkom Threat Map, Data Center Monitoring Performance (DCMP), and Java Spring Boot enterprise supplier management.\n\nDeep polyglot mastery across Java Spring Boot, Python (Odoo ERP, FastAPI, Django), Node.js, PHP, C#/.NET, Oracle, PostgreSQL, and Linux kernel/server administration. Combines rigorous architectural governance with hands-on technical execution to deliver resilient, high-throughput systems that power national corporations and millions of end-users.",
+  "competencies": [
+    {
+      "category": "Enterprise & Distributed Architecture",
+      "skills": [
+        "Enterprise Solutions Architecture",
+        "Microservices & Distributed Systems",
+        "ISO 8583 Financial Switching Protocol",
+        "Mission-Critical Telecom Gateways",
+        "Zero-Downtime Governance",
+        "High-Throughput Payment Processing",
+        "Event-Driven Telemetry",
+        "Clean Architecture / DDD"
+      ]
+    },
+    {
+      "category": "Backend & Systems Engineering",
+      "skills": [
+        "Odoo ERP Framework",
+        "Java (Spring Boot, EJB)",
+        "Python (Odoo, FastAPI, Django)",
+        "Node.js (Express)",
+        "PHP (Laravel, Yii, CodeIgniter)",
+        "C# / .NET Framework",
+        "RESTful APIs & gRPC",
+        "RPC & Socket Programming"
+      ]
+    },
+    {
+      "category": "Databases & Data Management",
+      "skills": [
+        "Oracle Database",
+        "PostgreSQL",
+        "MySQL / MariaDB",
+        "Microsoft SQL Server",
+        "MongoDB",
+        "IBM DB2",
+        "Redis Caching",
+        "Database Optimization & Indexing"
+      ]
+    },
+    {
+      "category": "Infrastructure, Cloud & DevOps",
+      "skills": [
+        "Linux / Unix Administration",
+        "Server Hardening & Firewalls",
+        "Data Center Performance Monitoring",
+        "Docker & Containerization",
+        "CI/CD Deployment Pipelines",
+        "DNS & Network Routing (TCP/IP)",
+        "Nginx / Apache Web Servers",
+        "IoT Telematics Integration"
+      ]
+    },
+    {
+      "category": "Security, PKI & Blockchain",
+      "skills": [
+        "Public Key Infrastructure (PKI)",
+        "Certificate of Authority (CA)",
+        "OpenSSL & Cryptographic Modules",
+        "Smart Card Authentication",
+        "Session Management & HTTPS",
+        "Network Security Map Telemetry",
+        "Web3 / Blockchain Smart Contracts",
+        "ISO Compliance & Standards"
+      ]
+    },
+    {
+      "category": "Frontend, GIS & Mobile",
+      "skills": [
+        "Svelte & Modern JavaScript",
+        "Vue.js & React",
+        "HTML5 & CSS3 / Glassmorphism",
+        "ESRI ArcGIS Suite (ArcMap, ArcGlobe)",
+        "GIS Spatial Mapping",
+        "Android Developer Tools",
+        "Responsive Web Design",
+        "Data Visualization & Dashboards"
+      ]
+    }
+  ],
+  "experiences": [
+    {
+      "company": "PT. Sigma Cipta Caraka (Telkomsigma)",
+      "role": "Lead Programmer Analyst & Solutions Architect",
+      "period": "November 2018 - Present",
+      "location": "Jakarta / Tangerang, Indonesia",
+      "companyDesc": "Telkomsigma is Indonesia's leading ICT Solutions and Services provider under Telkom Indonesia Group.",
+      "highlights": [
+        "Architected and delivered the enterprise-grade Supplier Management System using Java Spring Boot and Oracle Database, managing vendor lifecycle, automated procurement, RFQ workflows, purchase orders, and supplier performance evaluation.",
+        "Engineered the Telkom eRUPS (Electronic General Meeting of Shareholders) platform for PT Telkom Indonesia Tbk utilizing the Odoo ERP framework, customized Python modules, and PostgreSQL, ensuring legally compliant electronic voting, real-time quorum calculations, secure audit trails, and zero-downtime execution during high-visibility national shareholder meetings.",
+        "Built the Data Center Monitoring Performance (DCMP) system (dcmp.sigma.my.id), providing real-time telemetry, capacity forecasting, and proactive incident management across Tier-3 and Tier-4 data centers.",
+        "Engineered the Telkom Threat Map, visualizing real-time cyber attack vectors and cybersecurity defensive telemetry across the Telkom national internet backbone.",
+        "Architected DigiHotel Property Management System (PMS) and DigiHotel FAB Payment Gateway (pay.digihotel.id), an end-to-end hospitality ERP covering room bookings, inventory, payroll, and automated online payment gateway settlements.",
+        "Designed and implemented IoT telematics systems for Telkom Property: Mybirawa TMS (vehicle inspection integrated with onboard IoT sensors) and MyDEFA (periodic supply chain asset compliance).",
+        "Developed C3 Omnichannel & AI Chatbot platform, uniting multi-channel customer communications into a unified agent workspace.",
+        "Implemented the PSAK 71 financial asset impairment calculation engine for Bank Malut according to national banking regulatory compliance."
+      ],
+      "tags": [
+        "Odoo ERP",
+        "Python",
+        "Java Spring Boot",
+        "Oracle DB",
+        "PostgreSQL",
+        "Vue.js",
+        "IoT",
+        "Cybersecurity",
+        "Fintech",
+        "Microservices"
+      ]
+    },
+    {
+      "company": "PT. Parimas Hicindo Sentosa",
+      "role": "Senior Software Engineer & Systems Architect",
+      "period": "December 2012 - October 2018",
+      "location": "Jakarta, Indonesia",
+      "companyDesc": "Designated local partner of LENCO Mobile, an international telecom technology provider specializing in multimedia messaging and value-added mobile solutions.",
+      "highlights": [
+        "Architected the MMS Campaign Platform (id01.lencommsc.com) powered by MBuni MMS Gateway, delivering high-volume mobile coupons, QR codes, Microsoft tags, and mobile banking statements for major telecom operators.",
+        "Engineered Zona Seru Telkomsel (zonaseru.com), an enterprise multi-channel digital application distribution portal serving millions of content downloads across ODP, SMS, WAP, and Web.",
+        "Pioneered early Web3 and cryptocurrency applications in Indonesia: created automated bot platforms on the STEEM blockchain (steem.farinside.com) and Indocell (indocell.my.id), an automated airtime recharge gateway settled in cryptocurrency.",
+        "Developed and published native/hybrid Android applications under 'Farinside Dev' on the Google Play Store.",
+        "Supervised system design, database indexing, and 24/7 server infrastructure operations for high-concurrency telecom traffic."
+      ],
+      "tags": [
+        "PHP",
+        "MySQL",
+        "MMS Gateway",
+        "QlikView",
+        "Blockchain / Web3",
+        "Android",
+        "Linux Server Admin"
+      ]
+    },
+    {
+      "company": "PT. Maxxima Innovative Engineering",
+      "role": "Senior GIS Software Engineer",
+      "period": "September 2011 - December 2012",
+      "location": "Jakarta, Indonesia",
+      "companyDesc": "Specialized engineering firm delivering spatial data infrastructure and Geographic Information Systems (GIS).",
+      "highlights": [
+        "Organized, maintained, and engineered advanced GIS Systems for Mining Solutions using ESRI ArcGIS suite (ArcView, ArcMap, ArcGlobe).",
+        "Integrated spatial geospatial databases with enterprise desktop and web clients to visualize mining concession boundaries, vehicle tracking, and geological surveying."
+      ],
+      "tags": [
+        "ESRI ArcGIS",
+        "ArcMap",
+        "ArcGlobe",
+        "Spatial Database",
+        "Python",
+        "GIS Solutions"
+      ]
+    },
+    {
+      "company": "PT. Bumi Kita Makmur",
+      "role": "Senior Software Engineer & Payment Switching Specialist",
+      "period": "October 2003 - August 2011",
+      "location": "Jakarta, Indonesia",
+      "companyDesc": "Leading switching provider and transaction data center application provider for telecommunication and financial institutions.",
+      "highlights": [
+        "Architected and deployed the core Recharge Gateway for PT Telkomsel utilizing the ISO 8583 financial switching protocol, processing high-volume daily recharge transactions reliably with zero major outages.",
+        "Engineered transaction data center solutions, Payment Point Online Bank (PPOB), core transaction routing, automated financial clearing, and reconciliation engines.",
+        "Maintained high-availability servers, firewall policies, cryptographic key exchanges, and direct host-to-host bank switching links."
+      ],
+      "tags": [
+        "ISO 8583",
+        "Transaction Gateway",
+        "Financial Switching",
+        "MSSQL",
+        "IIS",
+        "PPOB",
+        "Server Hardening"
+      ]
+    },
+    {
+      "company": "PT. Magna Multimedia Makmur",
+      "role": "Software Engineer & Security Systems Technologist",
+      "period": "March 2001 - July 2003",
+      "location": "Jakarta, Indonesia",
+      "companyDesc": "Pioneering digital solutions firm providing network security, enterprise web solutions, and cryptographic infrastructure.",
+      "highlights": [
+        "Architected i-Trust Certification Authority (CA) on Linux and OpenSSL, incorporating user registration, digital signature issuance, smart card integration, and PKI-enabled directory servers.",
+        "Engineered BUMN Online (bumn-ri.com) executive information system for the Ministry of State-Owned Enterprises, featuring secure forms and Cihuy!? encrypted mail.",
+        "Constructed BARKI (barki.or.id) data warehouse and server-to-server transactional data exchange over secure HTTPS and RPC protocols."
+      ],
+      "tags": [
+        "PKI & CA",
+        "OpenSSL",
+        "Smart Card",
+        "PostgreSQL",
+        "DB2",
+        "Java EJB",
+        "Linux Security"
+      ]
+    },
+    {
+      "company": "Catcha Corp Solution Indonesia & Telkom Indonesia Tbk",
+      "role": "Pioneer Web Developer & Software Engineer",
+      "period": "June 1999 - January 2001",
+      "location": "Jakarta, Indonesia",
+      "companyDesc": "Early internet portals, search engines, and national telecom web applications.",
+      "highlights": [
+        "Built early web portal applications for Telkom Indonesia Multimedia Division, including Telkom 147 Web Customer Service, Webchat, and community portals.",
+        "Developed Lemhannas Executive Information System and student monitoring portal using early ASP, Delphi, and OpenSSL encryption modules.",
+        "Created dynamic search engine crawlers, daily automated cron scrapers, and interactive web games for Catcha Corp."
+      ],
+      "tags": [
+        "PHP",
+        "Perl",
+        "ASP",
+        "MySQL",
+        "Apache",
+        "Early Internet Protocols"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "supplier-mgmt",
+      "title": "Enterprise Supplier Management System",
+      "client": "Telkomsigma / Enterprise BUMN",
+      "period": "2023 - Present",
+      "category": "Enterprise",
+      "featured": true,
+      "description": "Mission-critical enterprise supplier and vendor lifecycle management platform handling automated onboarding, vendor rating, e-procurement workflows, purchase order generation, contract monitoring, and audit compliance.",
+      "tech": [
+        "Java Spring Boot",
+        "Oracle Database",
+        "REST APIs",
+        "Microservices",
+        "Docker"
+      ],
+      "impact": "Streamlined multi-company vendor operations, reducing procurement cycle time and ensuring 100% compliance with BUMN procurement governance."
+    },
+    {
+      "id": "telkom-erups",
+      "title": "Telkom eRUPS (Electronic Shareholders Meeting)",
+      "client": "PT Telkom Indonesia Tbk",
+      "period": "2020 - Present",
+      "category": "Enterprise",
+      "featured": true,
+      "url": "https://rups.telkom.co.id",
+      "description": "Electronic General Meeting of Shareholders platform for PT Telkom Indonesia Tbk architected and built on the Odoo ERP framework with customized Python modules and PostgreSQL database. Provides secure real-time digital voting, automated quorum counting, shareholder registry integration, video streaming coordination, and legal audit trail generation.",
+      "tech": [
+        "Odoo ERP Framework",
+        "Python",
+        "PostgreSQL",
+        "WebSockets / Live Quorum",
+        "High-Security Cryptography"
+      ],
+      "impact": "Guaranteed zero-downtime and zero discrepancies during annual and extraordinary national shareholder meetings with billions in market cap governance."
+    },
+    {
+      "id": "telkomsel-iso8583",
+      "title": "Telkomsel ISO 8583 Recharge Switching Gateway",
+      "client": "PT Telkomsel / PT Bumi Kita Makmur",
+      "period": "2003 - 2011",
+      "category": "Fintech",
+      "featured": true,
+      "description": "National-scale telecommunications recharge gateway operating on the international financial switching standard ISO 8583. Routes high-frequency prepaid credit transactions between banking switches, payment points, and Telkomsel core recharge engines.",
+      "tech": [
+        "ISO 8583 Protocol",
+        "C / C++",
+        "MSSQL",
+        "Socket Programming",
+        "Financial Switching"
+      ],
+      "impact": "Processed millions of daily transactions with 99.99% uptime, serving as the financial heartbeat for Telkomsel recharge distribution for over a decade."
+    },
+    {
+      "id": "telkom-threat-map",
+      "title": "Telkom Threat Map (Real-time Cyber Security)",
+      "client": "PT Telkom Indonesia Tbk / Telkomsigma",
+      "period": "2021",
+      "category": "Security",
+      "featured": true,
+      "description": "Interactive real-time visualization platform displaying incoming and outgoing cyber attacks, malicious traffic signatures, and network security threat vectors traversing Telkom's nationwide backbone.",
+      "tech": [
+        "Node.js",
+        "WebSockets",
+        "D3.js / SVG Visualizer",
+        "Security Telemetry",
+        "Redis"
+      ],
+      "impact": "Empowered cybersecurity operations center (SOC) analysts to detect distributed DDoS and exploit waves instantaneously across the national internet grid."
+    },
+    {
+      "id": "dcmp-sigma",
+      "title": "Data Center Monitoring Performance (DCMP)",
+      "client": "Telkomsigma Data Centers",
+      "period": "2020 - 2021",
+      "category": "Cloud",
+      "featured": true,
+      "url": "https://dcmp.sigma.my.id",
+      "description": "Comprehensive operational monitoring suite providing granular telemetry for power usage effectiveness (PUE), server health, network load, temperature sensors, and SLA tracking across Tier-3/Tier-4 data centers.",
+      "tech": [
+        "Python FastAPI",
+        "TimescaleDB / PostgreSQL",
+        "Vue.js",
+        "SNMP / IoT",
+        "Linux Daemons"
+      ],
+      "impact": "Prevented outages through predictive capacity alerts and automated SLA reporting for critical government and enterprise co-location clients."
+    },
+    {
+      "id": "digihotel-fab",
+      "title": "DigiHotel PMS & FAB Payment Gateway",
+      "client": "DigiHotel Hospitality Solutions",
+      "period": "2019 - 2020",
+      "category": "Fintech",
+      "featured": true,
+      "url": "https://pay.digihotel.id",
+      "description": "Complete Cloud Property Management System (PMS) and dedicated online payment gateway (FAB). Automates front-desk reservations, housekeeping, table-side ordering, inventory, billing, and multi-channel online payments (QRIS, VA, Credit Card).",
+      "tech": [
+        "PHP Laravel",
+        "Node.js",
+        "Payment Gateway APIs",
+        "MySQL",
+        "RESTful Architecture"
+      ],
+      "impact": "Deployed across multiple hotel chains, increasing direct online bookings and cutting payment reconciliation time by 80%."
+    },
+    {
+      "id": "mybirawa-tms",
+      "title": "Mybirawa TMS & Squad Patrol",
+      "client": "Telkom Property",
+      "period": "2021 - 2022",
+      "category": "IoT",
+      "featured": false,
+      "description": "Digital vehicle inspection and team fleet collaboration platform integrated with onboard IoT sensors. Tracks vehicle readiness, maintenance scheduling, and real-time operational workflows.",
+      "tech": [
+        "IoT Telematics",
+        "Mobile APIs",
+        "PostgreSQL",
+        "FastAPI",
+        "React Native"
+      ],
+      "impact": "Replaced manual paper vehicle checklists with verifiable digital audits, preventing fleet breakdown and fuel discrepancies."
+    },
+    {
+      "id": "steem-indocell",
+      "title": "Steem Blockchain Bot & Indocell Gateway",
+      "client": "Open Source / Independent Innovation",
+      "period": "2017 - 2018",
+      "category": "Web3",
+      "featured": false,
+      "url": "https://indocell.my.id",
+      "description": "Pioneering Web3 fintech gateway enabling automated mobile airtime top-ups in Indonesia paid directly using STEEM cryptocurrency, coupled with automated curation bot systems on the Steem distributed blockchain.",
+      "tech": [
+        "Blockchain Node APIs",
+        "Node.js",
+        "Web3",
+        "Cryptographic Signatures",
+        "Telco APIs"
+      ],
+      "impact": "Demonstrated early real-world utility of blockchain transactions for Indonesian telecom consumers."
+    },
+    {
+      "id": "itrust-ca",
+      "title": "i-Trust Certification Authority (CA) & PKI",
+      "client": "PT Magna Multimedia Makmur",
+      "period": "2002 - 2003",
+      "category": "Security",
+      "featured": false,
+      "url": "https://i-trustonline.com",
+      "description": "Enterprise Certificate Authority service built from foundational principles on OpenSSL and Linux, issuing X.509 digital certificates, smart card cryptographic tokens, and secure directory server integrations.",
+      "tech": [
+        "OpenSSL",
+        "Linux C Modules",
+        "X.509 PKI",
+        "OpenLDAP",
+        "Apache SSL"
+      ],
+      "impact": "Laid early standards for digital identity, cryptographic signing, and encrypted communications in Indonesia's enterprise space."
+    },
+    {
+      "id": "autorefill-telkomsel",
+      "title": "Autorefill Telkomsel (autorefill.plasa.com)",
+      "client": "PT Telkomsel / PT Bumi Kita Makmur",
+      "period": "2003 - 2011",
+      "category": "Fintech",
+      "featured": true,
+      "url": "http://autorefill.plasa.com",
+      "description": "Web-based electronic stock monitoring, automated recharge engine, reporting, and integrated workflow system connecting Telkomsel recharge infrastructure with national distributor networks.",
+      "tech": [
+        "IIS Web Server",
+        "MSSQL",
+        "ASP",
+        "Telco Recharge Gateway",
+        "Workflow Engine"
+      ],
+      "impact": "Automated distributor stock allocation and real-time prepaid recharge fulfillment for Telkomsel subscribers nationwide."
+    },
+    {
+      "id": "zonaseru-telkomsel",
+      "title": "Zona Seru Telkomsel (zonaseru.com)",
+      "client": "PT Telkomsel / PT Parimas Hicindo Sentosa",
+      "period": "2014 - 2015",
+      "category": "Telecom",
+      "featured": true,
+      "url": "http://zonaseru.com",
+      "description": "Multi-channel application store and digital content delivery platform enabling content discovery, billing, and downloads across multiple channels (ODP, SMS, WAP, and Web).",
+      "tech": [
+        "PHP",
+        "MySQL",
+        "ODP Gateway",
+        "WAP / Web Store",
+        "SMS Integration",
+        "High-Concurrency Linux"
+      ],
+      "impact": "Handled millions of application and content downloads across diverse mobile device ecosystems in Indonesia."
+    },
+    {
+      "id": "bumn-online",
+      "title": "BUMN Online (bumn-ri.com)",
+      "client": "Kementerian BUMN RI / PT Magna Multimedia Makmur",
+      "period": "2001 - 2002",
+      "category": "Enterprise",
+      "featured": true,
+      "url": "http://www.bumn-ri.com",
+      "description": "Executive Information System (EIS) and secure government web portal for the Ministry of State-Owned Enterprises (BUMN), featuring dynamic form generation, web presence, Certificate of Authority, and Cihuy!? secure encrypted mail.",
+      "tech": [
+        "PHP",
+        "PostgreSQL",
+        "Java",
+        "OpenSSL",
+        "Certificate of Authority",
+        "HTTPS / SecureMail"
+      ],
+      "impact": "Pioneered secure digital communications, dynamic executive reporting, and public online presence for Indonesia's state-owned enterprises."
+    },
+    {
+      "id": "barki-portal",
+      "title": "BARKI Data Warehouse (barki.or.id)",
+      "client": "BARKI / PT Magna Multimedia Makmur",
+      "period": "2001",
+      "category": "Enterprise",
+      "featured": false,
+      "url": "http://www.barki.or.id",
+      "description": "Web data warehouse and enterprise transactional portal featuring server-to-server data synchronization, secure TCP sockets, Remote Procedure Calls (RPC), and Cihuy!? Mail integration.",
+      "tech": [
+        "PHP",
+        "PostgreSQL",
+        "Java RPC",
+        "TCP Socket Programming",
+        "Apache",
+        "OpenSSL"
+      ],
+      "impact": "Established early high-security data warehousing and automated cross-server transactional data exchanges."
+    },
+    {
+      "id": "musiknet-indonesia",
+      "title": "MusikNet Indonesia v4.00 (musiknetindonesia.com)",
+      "client": "MusikNet Indonesia / PT Magna Multimedia Makmur",
+      "period": "2001",
+      "category": "Web",
+      "featured": false,
+      "url": "http://musiknetindonesia.com",
+      "description": "One of Indonesia's pioneering digital music streaming, artist community, and multimedia content portals.",
+      "tech": [
+        "PHP",
+        "PostgreSQL",
+        "Java",
+        "Apache",
+        "Audio Streaming Integration"
+      ],
+      "impact": "Pioneered digital music distribution, community forums, and artist cataloguing in the early Indonesian internet era."
+    },
+    {
+      "id": "quiz-telkomsel",
+      "title": "Quiz Telkomsel (Interactive Game & Campaign)",
+      "client": "PT Telkomsel / Catcha Corp Indonesia",
+      "period": "2000",
+      "category": "Telecom",
+      "featured": false,
+      "description": "Interactive Flash gaming engine (Pacman) and quiz challenge integrated with mobile backend for Telkomsel subscriber loyalty campaigns.",
+      "tech": [
+        "Flash ActionScript",
+        "Perl CGI",
+        "PHP",
+        "MySQL",
+        "SMS Gateway"
+      ],
+      "impact": "Engaged thousands of mobile subscribers during high-visibility nationwide Telkomsel digital campaigns."
+    },
+    {
+      "id": "siaga-telkomsel",
+      "title": "Siaga Telkomsel (siaga.telkomsel.com)",
+      "client": "PT Telkomsel / Catcha Corp Indonesia",
+      "period": "2000",
+      "category": "Telecom",
+      "featured": false,
+      "url": "http://siaga.telkomsel.com",
+      "description": "Seasonal emergency and community service portal built for Telkomsel subscribers during national holiday traffic (Mudik Lebaran), providing post-service maps and emergency updates.",
+      "tech": [
+        "PHP",
+        "MySQL",
+        "Flash",
+        "JavaScript",
+        "Apache Web Server"
+      ],
+      "impact": "Delivered real-time traffic updates, post-service locations, and emergency contacts to holiday travelers across Indonesia."
+    },
+    {
+      "id": "catcha-platform",
+      "title": "Catcha Corp Applications Platform",
+      "client": "Catcha Corp. Solution Indonesia",
+      "period": "2000 - 2001",
+      "category": "Web",
+      "featured": false,
+      "url": "http://catcha.co.id",
+      "description": "Comprehensive internet portal platform including automated daily web scrapers (Horoscopes catcha.co.id/horoscopes), travel portal (catcha.co.id/indo.com), search engine crawlers, and localized community features.",
+      "tech": [
+        "PHP",
+        "Perl Daily Cron / Page Grabbing",
+        "MySQL",
+        "Search Indexing",
+        "Apache"
+      ],
+      "impact": "Automated daily content aggregation and sustained high daily visitor traffic for one of Southeast Asia's top internet portals of the era."
+    },
+    {
+      "id": "telkom-pioneer-portals",
+      "title": "Telkom Pioneer Portals (Plasa.com & Telkom 147)",
+      "client": "PT Telekomunikasi Indonesia Tbk (Div. Multimedia)",
+      "period": "1999 - 2000",
+      "category": "Telecom",
+      "featured": true,
+      "url": "http://www.telkom147.com",
+      "description": "Foundational digital web applications for Telkom Indonesia: Telkom 147 Web Customer Service (telkom147.com), Plasa.com Webchat (webchat.plasa.com), Telkomania (telkomania.plasa.com), KSI School Community (ksi.plasa.com), Bangproline, and Lemhannas Executive Monitoring.",
+      "tech": [
+        "PHP",
+        "ASP",
+        "PostgreSQL",
+        "MSSQL",
+        "Perl",
+        "Apache / IIS Web Server"
+      ],
+      "impact": "Pioneered online customer service, web chat, and digital communities for Indonesia's national telecommunication operator."
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universitas Terbuka",
+      "degree": "S1 (Undergraduate Degree in Progress)",
+      "period": "2024 - Present",
+      "location": "Indonesia",
+      "desc": "Currently pursuing Bachelor's degree (S1 in progress since 2024)."
+    },
+    {
+      "institution": "SMK Telkom Malang",
+      "degree": "Telecommunication & Computer Engineering",
+      "period": "1996 - 1999",
+      "location": "Malang, Indonesia",
+      "desc": "Prestigious national telecommunication academy focusing on network protocols, telecommunication switching, and software programming."
+    }
+  ],
+  "references": [
+    {
+      "name": "Huda Pristiwanto",
+      "title": "Head of Product Development",
+      "organization": "PT Sigma Cipta Caraka (Telkomsigma)",
+      "email": "huda.pristiwanto@sigma.co.id",
+      "relationship": "Direct Division Head & Product Leader at Telkomsigma"
+    },
+    {
+      "name": "Kristanto Budi Rahardja",
+      "title": "Head of VAS Content",
+      "organization": "PT Parimas Hicindo Sentosa",
+      "email": "kris@parimas.co.id",
+      "phone": "+62 21 5209845",
+      "relationship": "Executive Leader in Mobile Telecom & VAS Development"
+    },
+    {
+      "name": "Imam Santoso",
+      "title": "Manager E-Platform",
+      "organization": "PT Telekomunikasi Indonesia Tbk (Telkom), Multimedia Division",
+      "email": "imams@telkom.co.id",
+      "phone": "+62 21 3860500 Ext. 530",
+      "relationship": "Manager during national telecom portal and internet gateway initiatives"
+    },
+    {
+      "name": "Suhartono",
+      "title": "Manager Performance",
+      "organization": "PT Telekomunikasi Indonesia Tbk (Telkom), Multimedia Division",
+      "email": "suhartono@telkom.co.id",
+      "phone": "+62 21 3860500",
+      "relationship": "Engineering Performance Manager at Telkom Multimedia"
+    }
+  ]
+}

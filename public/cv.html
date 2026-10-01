@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lutfi Nailufar Nurdin - Executive CV | Principal Solutions Architect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1e3a8a;
+      --primary-dark: #0f172a;
+      --primary-light: #3b82f6;
+      --accent: #0ea5e9;
+      --accent-subtle: #e0f2fe;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --text-light: #94a3b8;
+      --bg-page: #f8fafc;
+      --bg-card: #ffffff;
+      --border-color: #e2e8f0;
+      --tag-bg: #f1f5f9;
+      --tag-text: #334155;
+      --sidebar-bg: #0f172a;
+      --sidebar-text: #f8fafc;
+      --sidebar-muted: #94a3b8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      line-height: 1.5;
+      font-size: 13.5px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Print & Action Bar */
+    .action-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(15, 23, 42, 0.95);
+      backdrop-filter: blur(8px);
+      padding: 12px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .action-bar-title {
+      font-size: 14px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .action-buttons {
+      display: flex;
+      gap: 12px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 16px;
+      font-size: 13px;
+      font-weight: 600;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      border: none;
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+    }
+    .btn-primary:hover {
+      background: #0284c7;
+      transform: translateY(-1px);
+    }
+    .btn-outline {
+      background: transparent;
+      border: 1px solid rgba(255,255,255,0.3);
+      color: #fff;
+    }
+    .btn-outline:hover {
+      background: rgba(255,255,255,0.1);
+    }
+
+    /* Main Container */
+    .cv-wrapper {
+      max-width: 1024px;
+      margin: 30px auto;
+      background: var(--bg-card);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+      border-radius: 12px;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 320px 1fr;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      background: var(--sidebar-bg);
+      color: var(--sidebar-text);
+      padding: 36px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    .profile-card {
+      text-align: center;
+    }
+    .avatar-wrapper {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      margin: 0 auto 16px;
+      border: 4px solid rgba(14, 165, 233, 0.4);
+      padding: 3px;
+      background: rgba(255,255,255,0.05);
+      overflow: hidden;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    }
+    .avatar-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .profile-name {
+      font-size: 20px;
+      font-weight: 800;
+      color: #ffffff;
+      line-height: 1.2;
+      margin-bottom: 6px;
+    }
+    .profile-role {
+      font-size: 12.5px;
+      color: var(--accent);
+      font-weight: 600;
+      line-height: 1.35;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* Sidebar sections */
+    .sidebar-section {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 20px;
+    }
+    .sidebar-title {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--sidebar-muted);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .contact-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 12.5px;
+      color: #cbd5e1;
+    }
+    .contact-item svg {
+      width: 15px;
+      height: 15px;
+      fill: var(--accent);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .contact-item a {
+      color: #cbd5e1;
+      text-decoration: none;
+      word-break: break-all;
+    }
+    .contact-item a:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    /* Metrics Grid */
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .metric-box {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 8px;
+      padding: 10px 8px;
+      text-align: center;
+    }
+    .metric-value {
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--accent);
+      line-height: 1.1;
+    }
+    .metric-label {
+      font-size: 10.5px;
+      color: var(--sidebar-muted);
+      margin-top: 4px;
+      font-weight: 500;
+    }
+
+    /* Skills Pill List */
+    .skills-group {
+      margin-bottom: 16px;
+    }
+    .skills-group:last-child {
+      margin-bottom: 0;
+    }
+    .skills-group-title {
+      font-size: 11.5px;
+      font-weight: 700;
+      color: #e2e8f0;
+      margin-bottom: 8px;
+    }
+    .tags-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+    .tag {
+      font-size: 11px;
+      padding: 3px 8px;
+      border-radius: 4px;
+      background: rgba(255,255,255,0.08);
+      color: #cbd5e1;
+      font-weight: 500;
+    }
+    .tag-accent {
+      background: rgba(14, 165, 233, 0.15);
+      color: #38bdf8;
+      border: 1px solid rgba(14, 165, 233, 0.3);
+    }
+
+    /* Main Content */
+    .main-content {
+      padding: 36px 36px;
+      background: #ffffff;
+    }
+
+    .main-section {
+      margin-bottom: 30px;
+    }
+    .main-section:last-child {
+      margin-bottom: 0;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 16px;
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 8px;
+    }
+    .section-header-icon {
+      width: 22px;
+      height: 22px;
+      color: var(--primary);
+    }
+    .section-title {
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--primary-dark);
+      letter-spacing: -0.2px;
+      text-transform: uppercase;
+    }
+
+    .summary-text {
+      font-size: 13.5px;
+      color: #334155;
+      line-height: 1.65;
+      text-align: justify;
+    }
+    .summary-text p {
+      margin-bottom: 10px;
+    }
+    .summary-text p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Experience Timeline */
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+    .timeline-item {
+      position: relative;
+      padding-left: 20px;
+      border-left: 2px solid #e2e8f0;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -6px;
+      top: 4px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--primary-light);
+      border: 2px solid #fff;
+      box-shadow: 0 0 0 2px var(--primary-light);
+    }
+    .timeline-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 3px;
+      flex-wrap: wrap;
+    }
+    .role-title {
+      font-size: 14.5px;
+      font-weight: 700;
+      color: var(--primary-dark);
+    }
+    .company-name {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--primary-light);
+      margin-bottom: 4px;
+    }
+    .period-badge {
+      font-size: 11.5px;
+      font-weight: 600;
+      background: var(--accent-subtle);
+      color: #0369a1;
+      padding: 2px 8px;
+      border-radius: 12px;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .company-desc {
+      font-size: 12px;
+      color: var(--text-muted);
+      font-style: italic;
+      margin-bottom: 8px;
+    }
+    .bullet-list {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-bottom: 10px;
+    }
+    .bullet-list li {
+      position: relative;
+      padding-left: 14px;
+      font-size: 13px;
+      color: #334155;
+      line-height: 1.5;
+    }
+    .bullet-list li::before {
+      content: '▪';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-size: 13px;
+    }
+    .timeline-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-top: 6px;
+    }
+    .timeline-tag {
+      font-size: 10.5px;
+      padding: 2px 7px;
+      background: var(--tag-bg);
+      color: var(--tag-text);
+      border-radius: 4px;
+      font-weight: 500;
+    }
+
+    /* Projects Grid */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .project-card {
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 12px 14px;
+      background: #fafafa;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+    .project-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 2px;
+    }
+    .project-client {
+      font-size: 11px;
+      color: var(--primary-light);
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    .project-desc {
+      font-size: 12px;
+      color: #475569;
+      line-height: 1.45;
+      margin-bottom: 8px;
+    }
+    .project-impact {
+      font-size: 11.5px;
+      color: #0369a1;
+      background: var(--accent-subtle);
+      padding: 4px 8px;
+      border-radius: 4px;
+      margin-bottom: 8px;
+      line-height: 1.35;
+    }
+    .project-tech {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+    .project-tech span {
+      font-size: 10px;
+      padding: 2px 6px;
+      background: #e2e8f0;
+      border-radius: 3px;
+      color: #1e293b;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    /* References list */
+    .references-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .ref-box {
+      border: 1px solid var(--border-color);
+      padding: 10px 12px;
+      border-radius: 6px;
+      background: #f8fafc;
+    }
+    .ref-name {
+      font-size: 12.5px;
+      font-weight: 700;
+      color: var(--primary-dark);
+    }
+    .ref-title {
+      font-size: 11.5px;
+      color: var(--text-muted);
+    }
+    .ref-org {
+      font-size: 11px;
+      color: var(--primary-light);
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    .ref-contact {
+      font-size: 11px;
+      color: #475569;
+    }
+
+    /* Print Optimization */
+    @media print {
+      body {
+        background: #ffffff !important;
+        font-size: 12px !important;
+      }
+      .action-bar {
+        display: none !important;
+      }
+      .cv-wrapper {
+        margin: 0 !important;
+        box-shadow: none !important;
+        max-width: 100% !important;
+        border-radius: 0 !important;
+      }
+      .sidebar {
+        padding: 24px 18px !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+      .main-content {
+        padding: 24px 24px !important;
+      }
+      .timeline-item, .project-card, .ref-box {
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
+      }
+      @page {
+        margin: 10mm 8mm;
+        size: A4;
+      }
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 768px) {
+      .cv-wrapper {
+        grid-template-columns: 1fr;
+        margin: 12px;
+      }
+      .projects-grid, .references-grid {
+        grid-template-columns: 1fr;
+      }
+      .action-bar {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Action Navigation Bar -->
+  <div class="action-bar">
+    <div class="action-bar-title">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+      Lutfi Nailufar Nurdin - Executive CV (Updated & Optimized)
+    </div>
+    <div class="action-buttons">
+      <button class="btn btn-primary" onclick="window.print()">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+        Print / Save to PDF
+      </button>
+      <a href="http://localhost:5173" class="btn btn-outline" target="_blank">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+        View Svelte Personal Page
+      </a>
+    </div>
+  </div>
+
+  <div class="cv-wrapper">
+    <!-- Left Dark Sidebar -->
+    <aside class="sidebar">
+      <div class="profile-card">
+        <div class="avatar-wrapper">
+          <img src="profile.png" alt="Lutfi Nailufar Nurdin" onerror="this.src='public/profile.png'">
+        </div>
+        <h1 class="profile-name">Lutfi Nailufar Nurdin</h1>
+        <div class="profile-role">Principal Solutions Architect & Lead Engineer</div>
+      </div>
+
+      <!-- Key Metrics -->
+      <div class="metrics-grid">
+        <div class="metric-box">
+          <div class="metric-value">25+</div>
+          <div class="metric-label">Years Exp.</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-value">50+</div>
+          <div class="metric-label">Enterprise Apps</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-value">99.99%</div>
+          <div class="metric-label">Switching Uptime</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-value">ISO 8583</div>
+          <div class="metric-label">Fintech Standard</div>
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="sidebar-section">
+        <div class="sidebar-title">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          Contact & Location
+        </div>
+        <ul class="contact-list">
+          <li class="contact-item">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <a href="mailto:lutfinn@gmail.com">lutfinn@gmail.com</a>
+          </li>
+          <li class="contact-item">
+            <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            <a href="tel:+6282123755074">+62 821-2375-5074</a>
+          </li>
+          <li class="contact-item">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            <span>Depok / Jakarta, Indonesia</span>
+          </li>
+          <li class="contact-item">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+            <a href="https://farinside.com" target="_blank">farinside.com</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Core Competencies -->
+      <div class="sidebar-section">
+        <div class="sidebar-title">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+          Technical Domains
+        </div>
+
+        <div class="skills-group">
+          <div class="skills-group-title">Architecture & Switching</div>
+          <div class="tags-container">
+            <span class="tag tag-accent">ISO 8583 Protocol</span>
+            <span class="tag tag-accent">Financial Switching</span>
+            <span class="tag">Enterprise Architecture</span>
+            <span class="tag">Zero-Downtime Governance</span>
+            <span class="tag">Microservices</span>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <div class="skills-group-title">Backend & Languages</div>
+          <div class="tags-container">
+            <span class="tag tag-accent">Odoo ERP (Python)</span>
+            <span class="tag tag-accent">Java Spring Boot</span>
+            <span class="tag">Python (FastAPI, Django)</span>
+            <span class="tag">Node.js (Express)</span>
+            <span class="tag">PHP (Laravel, Yii)</span>
+            <span class="tag">C# / .NET</span>
+            <span class="tag">REST & Socket APIs</span>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <div class="skills-group-title">Databases & Storage</div>
+          <div class="tags-container">
+            <span class="tag tag-accent">Oracle Database</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">MySQL / MariaDB</span>
+            <span class="tag">Microsoft SQL Server</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">Redis Caching</span>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <div class="skills-group-title">DevOps, Cloud & Security</div>
+          <div class="tags-container">
+            <span class="tag">Linux / Unix Kernel</span>
+            <span class="tag">Data Center Telemetry</span>
+            <span class="tag">PKI & OpenSSL</span>
+            <span class="tag">Cyber Threat Maps</span>
+            <span class="tag">Docker & CI/CD</span>
+            <span class="tag">ESRI ArcGIS</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="sidebar-section">
+        <div class="sidebar-title">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+          Education
+        </div>
+        <div style="margin-bottom: 12px;">
+          <div style="font-weight: 700; color: #fff; font-size: 12.5px;">Universitas Terbuka</div>
+          <div style="color: var(--sidebar-muted); font-size: 11.5px;">S1 (In Progress, 2024 - Present)</div>
+        </div>
+        <div>
+          <div style="font-weight: 700; color: #fff; font-size: 12.5px;">SMK Telkom Malang</div>
+          <div style="color: var(--sidebar-muted); font-size: 11.5px;">Telecom & Computer Engineering (1996 - 1999)</div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Right Main Content -->
+    <main class="main-content">
+      <!-- Executive Summary -->
+      <section class="main-section">
+        <div class="section-header">
+          <svg class="section-header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+          <h2 class="section-title">Executive Summary</h2>
+        </div>
+        <div class="summary-text">
+          <p>
+            <strong>Senior Principal Solutions Architect & Lead Engineer</strong> with over <strong>25 years</strong> of engineering leadership across high-throughput financial switches, national telecommunication platforms, enterprise governance systems, and mission-critical cloud infrastructure.
+          </p>
+          <p>
+            Proven track record delivering cornerstone technology across the <strong>Telkom Indonesia Group</strong> and state-owned enterprises (BUMN). Key accomplishments include engineering <strong>Telkom eRUPS</strong> (Electronic General Meeting of Shareholders with zero-downtime voting), <strong>Telkom Threat Map</strong> (real-time national cybersecurity attack telemetry), <strong>Data Center Monitoring Performance (DCMP)</strong>, and architecting the high-availability <strong>Telkomsel Recharge Gateway using ISO 8583 protocol</strong> operating reliably with 99.99% uptime since 2003.
+          </p>
+          <p>
+            Polyglot engineering leader combining deep technical craftsmanship in <strong>Java Spring Boot, Python, Oracle, Linux systems, and distributed transaction switching</strong> with strong architectural governance, stakeholder management, and squad mentorship.
+          </p>
+        </div>
+      </section>
+
+      <!-- Work Experience -->
+      <section class="main-section">
+        <div class="section-header">
+          <svg class="section-header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+          <h2 class="section-title">Professional Experience</h2>
+        </div>
+
+        <div class="timeline">
+          <!-- Experience 1: Telkomsigma -->
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <span class="role-title">Lead Programmer Analyst & Solutions Architect</span>
+              <span class="period-badge">Nov 2018 - Present</span>
+            </div>
+            <div class="company-name">PT. Sigma Cipta Caraka (Telkomsigma) - Telkom Indonesia Group</div>
+            <div class="company-desc">Indonesia's leading ICT Solutions and Services provider for Enterprise, Banking, and Government sectors.</div>
+            <ul class="bullet-list">
+              <li><strong>Enterprise Supplier Management:</strong> Architected and developed the BUMN-grade Supplier Management System using <em>Java Spring Boot and Oracle Database</em>, automating vendor onboarding, procurement workflows, purchase orders, and supplier SLA performance tracking.</li>
+              <li><strong>Telkom eRUPS (Shareholders General Meeting):</strong> Engineered the electronic voting, shareholder registry, and quorum calculation platform for PT Telkom Indonesia Tbk utilizing the <em>Odoo ERP framework, customized Python modules, and PostgreSQL</em>, ensuring zero-downtime, cryptographic auditability, and legal compliance during high-stakes annual shareholder assemblies.</li>
+              <li><strong>Telkom Threat Map:</strong> Developed the real-time cybersecurity telemetry visualization platform monitoring DDoS and malicious exploit traffic traversing the Telkom national internet backbone.</li>
+              <li><strong>Data Center Monitoring Performance (DCMP):</strong> Architected DCMP (dcmp.sigma.my.id) providing live sensor telemetry, power usage effectiveness (PUE), capacity forecasting, and proactive incident alerts across Tier-3/Tier-4 data centers.</li>
+              <li><strong>DigiHotel PMS & FAB Payment Gateway:</strong> Architected the hospitality management ERP and integrated online payment gateway backend handling multi-channel settlement (QRIS, VA, Cards) and automated reconciliation.</li>
+              <li><strong>IoT Vehicle Inspection & Supply Chain:</strong> Engineered Mybirawa TMS and MyDEFA for Telkom Property, replacing manual paper inspections with IoT telematics-backed vehicle and asset auditing.</li>
+              <li><strong>Financial Compliance:</strong> Built the automated PSAK 71 financial asset impairment calculation engine for Bank Malut.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="timeline-tag">Odoo ERP</span>
+              <span class="timeline-tag">Python</span>
+              <span class="timeline-tag">Java Spring Boot</span>
+              <span class="timeline-tag">Oracle DB</span>
+              <span class="timeline-tag">PostgreSQL</span>
+              <span class="timeline-tag">Vue.js</span>
+              <span class="timeline-tag">FastAPI</span>
+              <span class="timeline-tag">Microservices</span>
+              <span class="timeline-tag">Docker</span>
+              <span class="timeline-tag">Fintech</span>
+            </div>
+          </div>
+
+          <!-- Experience 2: PT Parimas Hicindo Sentosa -->
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <span class="role-title">Senior Software Engineer & Systems Architect</span>
+              <span class="period-badge">Dec 2012 - Oct 2018</span>
+            </div>
+            <div class="company-name">PT. Parimas Hicindo Sentosa (LENCO Mobile Partner)</div>
+            <div class="company-desc">Multi-national partner specializing in high-volume multimedia messaging (MMS) and mobile VAS platforms.</div>
+            <ul class="bullet-list">
+              <li>Architected the multi-operator MMS Campaign Platform (MBuni MMS Gateway, PHP, QlikView), distributing millions of mobile coupons, QR codes, and secure mobile bank statements.</li>
+              <li>Engineered <strong>Zona Seru Telkomsel</strong> (zonaseru.com), a multi-channel digital application and content store serving high-throughput downloads across ODP, SMS, WAP, and Web.</li>
+              <li>Early Web3 Pioneer: Designed automated bot infrastructure on the STEEM Blockchain (steem.farinside.com) and Indocell (indocell.my.id), enabling automated crypto-to-telco airtime exchange.</li>
+              <li>Developed and published native/hybrid Android applications under 'Farinside Dev' on Google Play Store.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="timeline-tag">MMS Gateway</span>
+              <span class="timeline-tag">PHP / MySQL</span>
+              <span class="timeline-tag">Blockchain / Web3</span>
+              <span class="timeline-tag">Android Tools</span>
+              <span class="timeline-tag">High-Concurrency Linux</span>
+            </div>
+          </div>
+
+          <!-- Experience 3: PT Maxxima -->
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <span class="role-title">Senior GIS Software Engineer</span>
+              <span class="period-badge">Sep 2011 - Dec 2012</span>
+            </div>
+            <div class="company-name">PT. Maxxima Innovative Engineering</div>
+            <div class="company-desc">Advanced spatial data and geographic information systems engineering firm.</div>
+            <ul class="bullet-list">
+              <li>Organized, engineered, and maintained enterprise GIS solutions for Mining Operations utilizing the ESRI ArcGIS suite (ArcMap, ArcGlobe, ArcView).</li>
+              <li>Integrated spatial databases with live mining vehicle tracking, concession mapping, and terrain modeling.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="timeline-tag">ESRI ArcGIS</span>
+              <span class="timeline-tag">Spatial Databases</span>
+              <span class="timeline-tag">Mining Solutions</span>
+              <span class="timeline-tag">Python GIS</span>
+            </div>
+          </div>
+
+          <!-- Experience 4: PT Bumi Kita Makmur -->
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <span class="role-title">Senior Software Engineer & Payment Switching Specialist</span>
+              <span class="period-badge">Oct 2003 - Aug 2011</span>
+            </div>
+            <div class="company-name">PT. Bumi Kita Makmur</div>
+            <div class="company-desc">Pioneering transaction switching provider and telecommunication payment gateway operator.</div>
+            <ul class="bullet-list">
+              <li><strong>Telkomsel Recharge Gateway:</strong> Architected and deployed the core Recharge Gateway for PT Telkomsel using the <strong>ISO 8583 financial switching protocol</strong>, ensuring continuous high-volume transactional uptime since late 2003.</li>
+              <li>Engineered Payment Point Online Bank (PPOB), core transaction routing, automated clearing, reconciliation engines, and real-time financial reporting.</li>
+              <li>Managed data center infrastructure, host-to-host bank switching links, cryptographic key rotation, and firewall hardening.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="timeline-tag">ISO 8583 Protocol</span>
+              <span class="timeline-tag">Financial Switching</span>
+              <span class="timeline-tag">MSSQL / IIS</span>
+              <span class="timeline-tag">Reconciliation Engines</span>
+              <span class="timeline-tag">PPOB</span>
+            </div>
+          </div>
+
+          <!-- Experience 5: Early Career Pioneer -->
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <span class="role-title">Software Engineer & Pioneer Web Technologist</span>
+              <span class="period-badge">Jun 1999 - Jul 2003</span>
+            </div>
+            <div class="company-name">PT Magna Multimedia Makmur | Catcha Corp | PT Telkom Indonesia Tbk</div>
+            <ul class="bullet-list">
+              <li><strong>i-Trust Certification Authority:</strong> Built enterprise Public Key Infrastructure (PKI) and Certificate of Authority on Linux and OpenSSL with Smart Card authentication.</li>
+              <li><strong>BUMN Online & Lemhannas:</strong> Developed executive information systems and secure encrypted communication portals for state ministries.</li>
+              <li><strong>Early Telkom Internet:</strong> Developed web portal infrastructure for Telkom 147 customer service, Webchat, and community portals at Telkom Multimedia Division.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Key Flagship Projects -->
+      <section class="main-section">
+        <div class="section-header">
+          <svg class="section-header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          <h2 class="section-title">Selected Flagship Enterprise Projects</h2>
+        </div>
+
+        <div class="projects-grid">
+          <div class="project-card">
+            <div>
+              <div class="project-title">Supplier Management System</div>
+              <div class="project-client">Telkomsigma / Enterprise BUMN</div>
+              <div class="project-desc">Enterprise supplier procurement, onboarding workflows, RFQ management, and performance scoring.</div>
+              <div class="project-impact">✓ 100% compliance with BUMN procurement governance and automated lifecycle tracking.</div>
+            </div>
+            <div class="project-tech">
+              <span>Java Spring Boot</span>
+              <span>Oracle DB</span>
+              <span>Microservices</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div>
+              <div class="project-title">Telkom eRUPS</div>
+              <div class="project-client">PT Telkom Indonesia Tbk</div>
+              <div class="project-desc">Electronic General Meeting of Shareholders platform built on Odoo ERP framework with custom Python modules and PostgreSQL. Provides real-time voting, live streaming, and quorum validation.</div>
+              <div class="project-impact">✓ Zero-downtime execution and verified legal compliance during high-visibility public meetings.</div>
+            </div>
+            <div class="project-tech">
+              <span>Odoo ERP</span>
+              <span>Python</span>
+              <span>PostgreSQL</span>
+              <span>Cryptography</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div>
+              <div class="project-title">Telkomsel ISO 8583 Gateway</div>
+              <div class="project-client">PT Telkomsel / PT Bumi Kita Makmur</div>
+              <div class="project-desc">High-frequency national prepaid recharge gateway communicating over international ISO 8583 protocol.</div>
+              <div class="project-impact">✓ Millions of daily recharge transactions with 99.99% reliability operating continuously since 2003.</div>
+            </div>
+            <div class="project-tech">
+              <span>ISO 8583</span>
+              <span>Financial Switch</span>
+              <span>MSSQL</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div>
+              <div class="project-title">Data Center Monitoring (DCMP)</div>
+              <div class="project-client">Telkomsigma Data Centers • 2020 - 2021</div>
+              <div class="project-desc">Real-time operational monitoring suite for Tier-3/Tier-4 data centers with PUE, temperature, and server SLA telemetry.</div>
+              <div class="project-impact">✓ Proactive outage prevention via predictive capacity alarms and real-time dashboard analytics.</div>
+            </div>
+            <div class="project-tech">
+              <span>Python FastAPI</span>
+              <span>TimescaleDB</span>
+              <span>IoT Telemetry</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div>
+              <div class="project-title">Autorefill Telkomsel</div>
+              <div class="project-client">PT Telkomsel / PT Bumi Kita Makmur • 2003 - 2011</div>
+              <div class="project-desc">Web-based electronic recharge and distributor stock monitoring workflow system (autorefill.plasa.com).</div>
+              <div class="project-impact">✓ Automated distributor stock allocation and nationwide prepaid airtime fulfillment.</div>
+            </div>
+            <div class="project-tech">
+              <span>IIS / ASP</span>
+              <span>MSSQL</span>
+              <span>Telco Recharge</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div>
+              <div class="project-title">Zona Seru Telkomsel</div>
+              <div class="project-client">PT Telkomsel / PT Parimas Hicindo Sentosa • 2014 - 2015</div>
+              <div class="project-desc">Multi-channel app store and digital content portal across ODP, SMS, WAP, and Web (zonaseru.com).</div>
+              <div class="project-impact">✓ Millions of digital content & application downloads across Indonesian subscriber devices.</div>
+            </div>
+            <div class="project-tech">
+              <span>PHP / MySQL</span>
+              <span>ODP / WAP</span>
+              <span>SMS Gateway</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div>
+              <div class="project-title">BUMN Online</div>
+              <div class="project-client">Kementerian BUMN RI / PT Magna Multimedia • 2001 - 2002</div>
+              <div class="project-desc">Executive Information System (EIS) and secure government portal featuring dynamic forms and encrypted mail (bumn-ri.com).</div>
+              <div class="project-impact">✓ Pioneered digital governance, secure forms, and public presence for state-owned enterprises.</div>
+            </div>
+            <div class="project-tech">
+              <span>PHP</span>
+              <span>PostgreSQL</span>
+              <span>OpenSSL / CA</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div>
+              <div class="project-title">Telkom Pioneer Portals (Plasa.com & 147)</div>
+              <div class="project-client">PT Telkom Indonesia Tbk (Div. Multimedia) • 1999 - 2000</div>
+              <div class="project-desc">Foundational web portals: Telkom 147 Web Customer Service (telkom147.com), Plasa.com Webchat, Telkomania, and Lemhannas EIS.</div>
+              <div class="project-impact">✓ Pioneered online customer support and internet community platforms for Telkom Indonesia.</div>
+            </div>
+            <div class="project-tech">
+              <span>PHP / ASP</span>
+              <span>PostgreSQL / MSSQL</span>
+              <span>Perl / Apache</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- References -->
+      <section class="main-section">
+        <div class="section-header">
+          <svg class="section-header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          <h2 class="section-title">Professional References</h2>
+        </div>
+
+        <div class="references-grid">
+          <div class="ref-box">
+            <div class="ref-name">Huda Pristiwanto</div>
+            <div class="ref-title">Head of Product Development</div>
+            <div class="ref-org">PT Sigma Cipta Caraka (Telkomsigma)</div>
+            <div class="ref-contact">Email: huda.pristiwanto@sigma.co.id</div>
+          </div>
+          <div class="ref-box">
+            <div class="ref-name">Kristanto Budi Rahardja</div>
+            <div class="ref-title">Head of VAS Content</div>
+            <div class="ref-org">PT Parimas Hicindo Sentosa</div>
+            <div class="ref-contact">Email: kris@parimas.co.id | Tel: +62 21 5209845</div>
+          </div>
+          <div class="ref-box">
+            <div class="ref-name">Imam Santoso</div>
+            <div class="ref-title">Manager E-Platform</div>
+            <div class="ref-org">PT Telkom Indonesia Tbk (Multimedia Div)</div>
+            <div class="ref-contact">Email: imams@telkom.co.id | Ext: 530</div>
+          </div>
+          <div class="ref-box">
+            <div class="ref-name">Suhartono</div>
+            <div class="ref-title">Manager Performance</div>
+            <div class="ref-org">PT Telkom Indonesia Tbk (Multimedia Div)</div>
+            <div class="ref-contact">Email: suhartono@telkom.co.id</div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+</body>
+</html>
