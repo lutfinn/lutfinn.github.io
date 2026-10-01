@@ -5,7 +5,7 @@
 - **Location:** Depok / Jakarta, Indonesia  
 - **Email:** [lutfinn@gmail.com](mailto:lutfinn@gmail.com)  
 - **Phone:** [+62 821-2375-5074](tel:+6282123755074)  
-- **Portfolio / Website:** [https://farinside.com](https://farinside.com)  
+- **Portfolio / Website:** [https://lutfinn.my.id](https://lutfinn.my.id)  
 
 ---
 

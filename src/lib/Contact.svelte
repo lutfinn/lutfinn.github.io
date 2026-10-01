@@ -90,6 +90,17 @@
           </div>
         </div>
 
+        <!-- Official Website Card -->
+        <div class="glass-card contact-card">
+          <div class="card-icon" style="background: rgba(6, 182, 212, 0.15); color: #38bdf8;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          </div>
+          <div class="card-info">
+            <span class="card-label">Official Domain</span>
+            <a href={personal.website} target="_blank" rel="noopener noreferrer" class="card-value">lutfinn.my.id</a>
+          </div>
+        </div>
+
         <!-- Download CV Banner -->
         <div class="cv-download-banner glass-card">
           <div class="banner-text">
