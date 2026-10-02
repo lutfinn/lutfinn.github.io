@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lutfinn.my.id/sitemap.xml
